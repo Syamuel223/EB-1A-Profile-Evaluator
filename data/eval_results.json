@@ -1,0 +1,979 @@
+{
+  "metrics": {
+    "rating_accuracy": 0.78,
+    "citation_validity": 1.0,
+    "hallucinated_evidence_rate": 0.0,
+    "counts": {
+      "correct": 39,
+      "rated": 50,
+      "citations": 23,
+      "valid_citations": 23,
+      "evidence": 24,
+      "grounded_evidence": 24
+    },
+    "note": "Small synthetic set; metrics are diagnostic, not a general quality guarantee. Citation matching is exact after basic normalization."
+  },
+  "cases": [
+    {
+      "profile_id": "researcher_strong",
+      "assessment": {
+        "criteria": [
+          {
+            "criterion_id": "C1",
+            "criterion": "Lesser nationally or internationally recognized prizes or awards for excellence",
+            "rating": "Strong",
+            "evidence": [
+              "She received the 2022 National Bioinformatics Prize"
+            ],
+            "reasoning": "The prize is a recognized national award, meeting the criterion.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p5-0003",
+                "page": 5,
+                "quote": "Receipt of lesser nationally or internationally recognized prizes or awards for excellence in the field of endeavor."
+              }
+            ],
+            "next_steps": [
+              "Document award details and committee review."
+            ]
+          },
+          {
+            "criterion_id": "C2",
+            "criterion": "Membership in associations requiring outstanding achievements, judged by recognized experts",
+            "rating": "Strong",
+            "evidence": [
+              "She is a Fellow of the International Society for Computational Biology"
+            ],
+            "reasoning": "Fellowship requires outstanding achievement judged by senior fellows, satisfying the criterion.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p6-0001",
+                "page": 6,
+                "quote": "Membership in associations in the field that require outstanding achievement of their members, as judged by recognized national or international experts."
+              }
+            ],
+            "next_steps": [
+              "Provide fellowship award letter and panel composition."
+            ]
+          },
+          {
+            "criterion_id": "C3",
+            "criterion": "Published material about the person in professional or major trade publications or other major media",
+            "rating": "Strong",
+            "evidence": [
+              "Nature Biotechnology published a feature profile about her work"
+            ],
+            "reasoning": "Feature in a major trade publication directly about her work meets the requirement.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p7-0001",
+                "page": 7,
+                "quote": "Published material about the person in professional or major trade publications or other major media, relating to the person's work in the field."
+              }
+            ],
+            "next_steps": [
+              "Submit the article copy and citation details."
+            ]
+          },
+          {
+            "criterion_id": "C4",
+            "criterion": "Participation as a judge of the work of others in the same or an allied field",
+            "rating": "Strong",
+            "evidence": [
+              "She reviewed 18 manuscripts for three peer\u2011reviewed journals"
+            ],
+            "reasoning": "Peer\u2011review participation qualifies as judging others' work.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p8-0001",
+                "page": 8,
+                "quote": "Participation, individually or on a panel, as a judge of the work of others in the same or an allied field of specification."
+              }
+            ],
+            "next_steps": [
+              "Provide review invitations and completed reports."
+            ]
+          },
+          {
+            "criterion_id": "C5",
+            "criterion": "Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance",
+            "rating": "Strong",
+            "evidence": [],
+            "reasoning": "Method adoption by many hospitals indicates major significance.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p8-0002",
+                "page": 8,
+                "quote": "The person's original scientific, scholarly, artistic, athletic or business-related contributions of major significance in the field."
+              }
+            ],
+            "next_steps": [
+              "Provide adoption letters and usage statistics."
+            ]
+          },
+          {
+            "criterion_id": "C6",
+            "criterion": "Authorship of scholarly articles in the field in professional or major trade publications or other major media",
+            "rating": "Strong",
+            "evidence": [
+              "She authored 26 peer\u2011reviewed scholarly articles"
+            ],
+            "reasoning": "Authorship of peer\u2011reviewed articles meets the criterion.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p9-0001",
+                "page": 9,
+                "quote": "Authorship of scholarly articles in the field, in professional or major trade publications or other major media."
+              }
+            ],
+            "next_steps": [
+              "Submit publication list with journal details."
+            ]
+          },
+          {
+            "criterion_id": "C7",
+            "criterion": "Display of the person's work at artistic exhibitions or showcases",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No evidence of artistic exhibition display provided.",
+            "citations": [],
+            "next_steps": [
+              "Gather any exhibition records if applicable."
+            ]
+          },
+          {
+            "criterion_id": "C8",
+            "criterion": "Leading or critical role for organizations or establishments with distinguished reputations",
+            "rating": "Strong",
+            "evidence": [
+              "She leads a distinguished university genomics center with 25 staff"
+            ],
+            "reasoning": "Leadership of a distinguished center satisfies the criterion.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p10-0002",
+                "page": 10,
+                "quote": "The person has performed in a leading or critical role for organizations or establishments that have a distinguished reputation."
+              }
+            ],
+            "next_steps": [
+              "Provide organizational charter and staff list."
+            ]
+          },
+          {
+            "criterion_id": "C9",
+            "criterion": "High salary or other significantly high remuneration relative to others in the field",
+            "rating": "Insufficient Info",
+            "evidence": [
+              "Her salary is $190,000; the resume provides no comparison data"
+            ],
+            "reasoning": "Salary alone is insufficient without comparative data to show it is high relative to peers.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p11-0001",
+                "page": 11,
+                "quote": "The person has commanded a high salary or other significantly high remuneration for services, in relation to others in the field."
+              }
+            ],
+            "next_steps": [
+              "Obtain industry salary benchmarks for comparison."
+            ]
+          },
+          {
+            "criterion_id": "C10",
+            "criterion": "Commercial successes in the performing arts, shown by box office receipts or sales",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No performing arts activity or sales data provided.",
+            "citations": [],
+            "next_steps": [
+              "Confirm no relevant performing arts evidence exists."
+            ]
+          }
+        ],
+        "overall": {
+          "strongest_criteria": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C8"
+          ],
+          "main_gaps": [
+            "C7",
+            "C9",
+            "C10"
+          ],
+          "readiness_score": 70,
+          "summary": "Strong evidence for most scientific criteria; gaps in artistic, salary comparison, and performing arts."
+        },
+        "limitations": [
+          "Educational screening only; not legal advice or a prediction of USCIS adjudication.",
+          "A r\u00e9sum\u00e9 may omit evidence needed for a complete petition.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C5."
+        ],
+        "run_metadata": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-20b",
+          "prompt_strategy": "balanced",
+          "retrieval_mode": "hybrid",
+          "elapsed_seconds": 3.235,
+          "input_tokens": 3059,
+          "output_tokens": 1517,
+          "estimated_cost_usd": null,
+          "guardrail_warnings": 1,
+          "generation_requests": 1
+        }
+      }
+    },
+    {
+      "profile_id": "engineer_partial",
+      "assessment": {
+        "criteria": [
+          {
+            "criterion_id": "C1",
+            "criterion": "Lesser nationally or internationally recognized prizes or awards for excellence",
+            "rating": "Partial",
+            "evidence": [
+              "He received an internal employee award."
+            ],
+            "reasoning": "Award exists but not clear if nationally/internationally recognized.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p5-0003",
+                "page": 5,
+                "quote": "Receipt of lesser nationally or internationally recognized prizes or awards for excellence in the field of endeavor."
+              }
+            ],
+            "next_steps": [
+              "Provide evidence of award\u2019s national/international recognition."
+            ]
+          },
+          {
+            "criterion_id": "C2",
+            "criterion": "Membership in associations requiring outstanding achievements, judged by recognized experts",
+            "rating": "Partial",
+            "evidence": [
+              "He belongs to a professional computing association that accepts applicants who pay dues and meet education requirements."
+            ],
+            "reasoning": "Membership exists but criteria of outstanding achievement not demonstrated.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p6-0001",
+                "page": 6,
+                "quote": "Membership in associations in the field that require outstanding achievement of their members, as judged by recognized national or international experts."
+              }
+            ],
+            "next_steps": [
+              "Show association\u2019s outstanding achievement requirement and expert evaluation."
+            ]
+          },
+          {
+            "criterion_id": "C3",
+            "criterion": "Published material about the person in professional or major trade publications or other major media",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No published material about him is provided.",
+            "citations": [],
+            "next_steps": [
+              "Obtain articles or features that discuss his work."
+            ]
+          },
+          {
+            "criterion_id": "C4",
+            "criterion": "Participation as a judge of the work of others in the same or an allied field",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "He was invited but did not complete reviews.",
+            "citations": [],
+            "next_steps": [
+              "Provide completed review evidence or other judging activity."
+            ]
+          },
+          {
+            "criterion_id": "C5",
+            "criterion": "Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance",
+            "rating": "Partial",
+            "evidence": [
+              "He built an internal forecasting tool; adoption and impact data are not provided."
+            ],
+            "reasoning": "Contribution exists but significance and impact are unclear.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p8-0002",
+                "page": 8,
+                "quote": "Original scientific, scholarly, artistic, athletic or business-related contributions of major significance in the field."
+              }
+            ],
+            "next_steps": [
+              "Document tool\u2019s adoption metrics and business impact."
+            ]
+          },
+          {
+            "criterion_id": "C6",
+            "criterion": "Authorship of scholarly articles in the field in professional or major trade publications or other major media",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Only workshop papers are mentioned, not peer\u2011reviewed scholarly articles.",
+            "citations": [],
+            "next_steps": [
+              "Provide peer\u2011reviewed journal or conference papers authored."
+            ]
+          },
+          {
+            "criterion_id": "C7",
+            "criterion": "Display of the person's work at artistic exhibitions or showcases",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No artistic exhibition record.",
+            "citations": [],
+            "next_steps": [
+              "Obtain exhibition records if applicable."
+            ]
+          },
+          {
+            "criterion_id": "C8",
+            "criterion": "Leading or critical role for organizations or establishments with distinguished reputations",
+            "rating": "Partial",
+            "evidence": [
+              "He is a senior engineer on a product team, but leadership and critical impact are not described."
+            ],
+            "reasoning": "Role exists but distinguished reputation and critical impact not shown.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p10-0002",
+                "page": 10,
+                "quote": "The person has performed in a leading or critical role for organizations or establishments that have a distinguished reputation."
+              }
+            ],
+            "next_steps": [
+              "Provide evidence of organization\u2019s distinguished reputation and his critical contributions."
+            ]
+          },
+          {
+            "criterion_id": "C9",
+            "criterion": "High salary or other significantly high remuneration relative to others in the field",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Salary provided but no comparative data.",
+            "citations": [],
+            "next_steps": [
+              "Provide salary benchmarks or comparative data."
+            ]
+          },
+          {
+            "criterion_id": "C10",
+            "criterion": "Commercial successes in the performing arts, shown by box office receipts or sales",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No performing arts activity.",
+            "citations": [],
+            "next_steps": [
+              "Not applicable; no evidence needed."
+            ]
+          }
+        ],
+        "overall": {
+          "strongest_criteria": [
+            "C1",
+            "C2",
+            "C5",
+            "C8"
+          ],
+          "main_gaps": [
+            "C3",
+            "C4",
+            "C6",
+            "C9"
+          ],
+          "readiness_score": 35,
+          "summary": "Limited evidence for key criteria; significant gaps in published material, judging, scholarly authorship, and salary data."
+        },
+        "limitations": [
+          "Educational screening only; not legal advice or a prediction of USCIS adjudication.",
+          "A r\u00e9sum\u00e9 may omit evidence needed for a complete petition."
+        ],
+        "run_metadata": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-20b",
+          "prompt_strategy": "balanced",
+          "retrieval_mode": "hybrid",
+          "elapsed_seconds": 59.492,
+          "input_tokens": 3040,
+          "output_tokens": 1102,
+          "estimated_cost_usd": null,
+          "guardrail_warnings": 0,
+          "generation_requests": 1
+        }
+      }
+    },
+    {
+      "profile_id": "performing_artist",
+      "assessment": {
+        "criteria": [
+          {
+            "criterion_id": "C1",
+            "criterion": "Lesser nationally or internationally recognized prizes or awards for excellence",
+            "rating": "Partial",
+            "evidence": [
+              "She won a regional music competition judged by a panel of established musicians."
+            ],
+            "reasoning": "Award mentioned, but not confirmed national/international recognition or level of prestige.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p5-0003",
+                "page": 5,
+                "quote": "Receipt of lesser nationally or internationally recognized prizes or awards for excellence in the field of endeavor."
+              }
+            ],
+            "next_steps": [
+              "Provide documentation of award level and national/international status."
+            ]
+          },
+          {
+            "criterion_id": "C2",
+            "criterion": "Membership in associations requiring outstanding achievements, judged by recognized experts",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No evidence of membership requirements or expert judgment provided.",
+            "citations": [],
+            "next_steps": [
+              "Obtain membership application or criteria documentation."
+            ]
+          },
+          {
+            "criterion_id": "C3",
+            "criterion": "Published material about the person in professional or major trade publications or other major media",
+            "rating": "Strong",
+            "evidence": [
+              "A major newspaper published a feature about her performances and career."
+            ],
+            "reasoning": "Feature in major newspaper meets requirement of professional/major media coverage.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p7-0001",
+                "page": 7,
+                "quote": "Published material about the person in professional or major trade publications or other major media, relating to the person's work in the field."
+              }
+            ],
+            "next_steps": [
+              "Provide article copy with title, date, author."
+            ]
+          },
+          {
+            "criterion_id": "C4",
+            "criterion": "Participation as a judge of the work of others in the same or an allied field",
+            "rating": "Strong",
+            "evidence": [
+              "She served on the jury of a national piano competition."
+            ],
+            "reasoning": "Jury service demonstrates judging role in same field.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p8-0001",
+                "page": 8,
+                "quote": "Participation, individually or on a panel, as a judge of the work of others in the same or an allied field of specification."
+              }
+            ],
+            "next_steps": [
+              "Provide jury invitation and participation confirmation."
+            ]
+          },
+          {
+            "criterion_id": "C5",
+            "criterion": "Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance",
+            "rating": "Partial",
+            "evidence": [
+              "Her new interpretation has been praised by reviewers, but broader influence is not documented."
+            ],
+            "reasoning": "Praise noted, but no evidence of major significance or impact.",
+            "citations": [],
+            "next_steps": [
+              "Collect reviews citing influence and impact metrics."
+            ]
+          },
+          {
+            "criterion_id": "C6",
+            "criterion": "Authorship of scholarly articles in the field in professional or major trade publications or other major media",
+            "rating": "Partial",
+            "evidence": [
+              "She authored one scholarly article on performance practice."
+            ],
+            "reasoning": "Single article present, but publication venue and peer-review status unclear.",
+            "citations": [],
+            "next_steps": [
+              "Provide journal details, peer-review confirmation."
+            ]
+          },
+          {
+            "criterion_id": "C7",
+            "criterion": "Display of the person's work at artistic exhibitions or showcases",
+            "rating": "Strong",
+            "evidence": [
+              "Her performances were presented at two named artistic festivals."
+            ],
+            "reasoning": "Festivals qualify as artistic exhibitions showcasing her work.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p10-0001",
+                "page": 10,
+                "quote": "Display of the person's work in the field at artistic exhibitions or showcases."
+              }
+            ],
+            "next_steps": [
+              "Provide festival programs and dates."
+            ]
+          },
+          {
+            "criterion_id": "C8",
+            "criterion": "Leading or critical role for organizations or establishments with distinguished reputations",
+            "rating": "Strong",
+            "evidence": [
+              "She served as artistic director of a nationally recognized orchestra for four seasons and led its programming."
+            ],
+            "reasoning": "Artistic director is a leading role in a distinguished organization.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p10-0002",
+                "page": 10,
+                "quote": "The person has performed in a leading or critical role for organizations or establishments that have a distinguished reputation."
+              }
+            ],
+            "next_steps": [
+              "Provide organization\u2019s reputation documentation."
+            ]
+          },
+          {
+            "criterion_id": "C9",
+            "criterion": "High salary or other significantly high remuneration relative to others in the field",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Salary not listed; no remuneration evidence provided.",
+            "citations": [],
+            "next_steps": [
+              "Submit salary statements or comparative compensation data."
+            ]
+          },
+          {
+            "criterion_id": "C10",
+            "criterion": "Commercial successes in the performing arts, shown by box office receipts or sales",
+            "rating": "Partial",
+            "evidence": [
+              "Her album sold 80,000 copies and box office records show sold\u2011out performances; comparative industry data is not included."
+            ],
+            "reasoning": "Sales figures present, but lack comparative context for significance.",
+            "citations": [],
+            "next_steps": [
+              "Provide industry benchmarks and comparative sales data."
+            ]
+          }
+        ],
+        "overall": {
+          "strongest_criteria": [
+            "C3",
+            "C4",
+            "C7",
+            "C8"
+          ],
+          "main_gaps": [
+            "C2",
+            "C5",
+            "C6",
+            "C9",
+            "C10"
+          ],
+          "readiness_score": 45,
+          "summary": "Evidence supports several criteria but gaps remain in membership, impact, publication, remuneration, and comparative commercial success."
+        },
+        "limitations": [
+          "Educational screening only; not legal advice or a prediction of USCIS adjudication.",
+          "A r\u00e9sum\u00e9 may omit evidence needed for a complete petition."
+        ],
+        "run_metadata": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-20b",
+          "prompt_strategy": "balanced",
+          "retrieval_mode": "hybrid",
+          "elapsed_seconds": 59.85,
+          "input_tokens": 3052,
+          "output_tokens": 1257,
+          "estimated_cost_usd": null,
+          "guardrail_warnings": 0,
+          "generation_requests": 1
+        }
+      }
+    },
+    {
+      "profile_id": "early_career_sparse",
+      "assessment": {
+        "criteria": [
+          {
+            "criterion_id": "C1",
+            "criterion": "Lesser nationally or internationally recognized prizes or awards for excellence",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No award information provided in the resume.",
+            "citations": [],
+            "next_steps": [
+              "Collect documentation of any prizes or awards received."
+            ]
+          },
+          {
+            "criterion_id": "C2",
+            "criterion": "Membership in associations requiring outstanding achievements, judged by recognized experts",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Resume lists no professional memberships.",
+            "citations": [],
+            "next_steps": [
+              "Identify and document any relevant association memberships."
+            ]
+          },
+          {
+            "criterion_id": "C3",
+            "criterion": "Published material about the person in professional or major trade publications or other major media",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No media coverage or publications cited.",
+            "citations": [],
+            "next_steps": [
+              "Gather press releases, articles, or profiles featuring the candidate."
+            ]
+          },
+          {
+            "criterion_id": "C4",
+            "criterion": "Participation as a judge of the work of others in the same or an allied field",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Resume shows no judging or peer\u2011review activity.",
+            "citations": [],
+            "next_steps": [
+              "Obtain evidence of any judging or review roles."
+            ]
+          },
+          {
+            "criterion_id": "C5",
+            "criterion": "Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No major contributions or innovations listed.",
+            "citations": [],
+            "next_steps": [
+              "Document significant research findings or patents."
+            ]
+          },
+          {
+            "criterion_id": "C6",
+            "criterion": "Authorship of scholarly articles in the field in professional or major trade publications or other major media",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No publications listed in the resume.",
+            "citations": [],
+            "next_steps": [
+              "Compile a list of peer\u2011reviewed articles authored."
+            ]
+          },
+          {
+            "criterion_id": "C7",
+            "criterion": "Display of the person's work at artistic exhibitions or showcases",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No exhibitions or showcases mentioned.",
+            "citations": [],
+            "next_steps": [
+              "Provide evidence of any relevant exhibitions."
+            ]
+          },
+          {
+            "criterion_id": "C8",
+            "criterion": "Leading or critical role for organizations or establishments with distinguished reputations",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Resume indicates only a research assistant role, not a leading position.",
+            "citations": [],
+            "next_steps": [
+              "Show evidence of leadership or critical roles in distinguished entities."
+            ]
+          },
+          {
+            "criterion_id": "C9",
+            "criterion": "High salary or other significantly high remuneration relative to others in the field",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No salary information provided.",
+            "citations": [],
+            "next_steps": [
+              "Submit salary statements or comparative compensation data."
+            ]
+          },
+          {
+            "criterion_id": "C10",
+            "criterion": "Commercial successes in the performing arts, shown by box office receipts or sales",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Candidate is a materials scientist; no performing arts activity listed.",
+            "citations": [],
+            "next_steps": [
+              "Not applicable for this field."
+            ]
+          }
+        ],
+        "overall": {
+          "strongest_criteria": [],
+          "main_gaps": [
+            "All criteria lack supporting evidence"
+          ],
+          "readiness_score": 0,
+          "summary": "No evidence supports any EB\u20111A criteria; further documentation required."
+        },
+        "limitations": [
+          "Educational screening only; not legal advice or a prediction of USCIS adjudication.",
+          "A r\u00e9sum\u00e9 may omit evidence needed for a complete petition.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C1.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C2.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C3.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C4.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C5.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C6.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C7.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C8.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C9.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C10."
+        ],
+        "run_metadata": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-20b",
+          "prompt_strategy": "balanced",
+          "retrieval_mode": "hybrid",
+          "elapsed_seconds": 60.402,
+          "input_tokens": 2961,
+          "output_tokens": 637,
+          "estimated_cost_usd": null,
+          "guardrail_warnings": 10,
+          "generation_requests": 1
+        }
+      }
+    },
+    {
+      "profile_id": "business_leader",
+      "assessment": {
+        "criteria": [
+          {
+            "criterion_id": "C1",
+            "criterion": "Lesser nationally or internationally recognized prizes or awards for excellence",
+            "rating": "Partial",
+            "evidence": [
+              "named Entrepreneur of the Year by a regional chamber"
+            ],
+            "reasoning": "Award received, but scope and selection details are missing.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p5-0003",
+                "page": 5,
+                "quote": "Receipt of lesser nationally or internationally recognized prizes or awards for excellence in the field of endeavor."
+              }
+            ],
+            "next_steps": [
+              "Obtain award nomination letter and selection criteria."
+            ]
+          },
+          {
+            "criterion_id": "C2",
+            "criterion": "Membership in associations requiring outstanding achievements, judged by recognized experts",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Membership in a founders association open to all company owners does not meet the requirement.",
+            "citations": [],
+            "next_steps": [
+              "Identify a professional association with outstanding achievement criteria."
+            ]
+          },
+          {
+            "criterion_id": "C3",
+            "criterion": "Published material about the person in professional or major trade publications or other major media",
+            "rating": "Partial",
+            "evidence": [],
+            "reasoning": "Profile exists, but publication details and relevance to field are not provided.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p7-0001",
+                "page": 7,
+                "quote": "Published material about the person in professional or major trade publications or other major media, relating to the person's work in the field."
+              }
+            ],
+            "next_steps": [
+              "Provide magazine issue, author, and article title."
+            ]
+          },
+          {
+            "criterion_id": "C4",
+            "criterion": "Participation as a judge of the work of others in the same or an allied field",
+            "rating": "Partial",
+            "evidence": [
+              "judged a startup accelerator's final pitch competition"
+            ],
+            "reasoning": "Judge role noted, but evidence of invitation and participation details missing.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p8-0001",
+                "page": 8,
+                "quote": "Participation, individually or on a panel, as a judge of the work of others in the same or an allied field of specification."
+              }
+            ],
+            "next_steps": [
+              "Submit judge invitation and confirmation."
+            ]
+          },
+          {
+            "criterion_id": "C5",
+            "criterion": "Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance",
+            "rating": "Partial",
+            "evidence": [
+              "developed a grid\u2011storage control system licensed by three utilities"
+            ],
+            "reasoning": "Contribution exists, but field\u2011wide significance and impact are not documented.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p8-0002",
+                "page": 8,
+                "quote": "The person's original scientific, scholarly, artistic, athletic or business-related contributions of major significance in the field."
+              }
+            ],
+            "next_steps": [
+              "Provide adoption metrics and industry impact statements."
+            ]
+          },
+          {
+            "criterion_id": "C6",
+            "criterion": "Authorship of scholarly articles in the field in professional or major trade publications or other major media",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "Only industry articles, not scholarly peer\u2011reviewed papers.",
+            "citations": [],
+            "next_steps": [
+              "Identify any peer\u2011reviewed publications."
+            ]
+          },
+          {
+            "criterion_id": "C7",
+            "criterion": "Display of the person's work at artistic exhibitions or showcases",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "System shown at a technology expo, not an artistic exhibition.",
+            "citations": [],
+            "next_steps": [
+              "Find artistic showcase evidence if applicable."
+            ]
+          },
+          {
+            "criterion_id": "C8",
+            "criterion": "Leading or critical role for organizations or establishments with distinguished reputations",
+            "rating": "Partial",
+            "evidence": [
+              "CEO of a publicly traded energy company"
+            ],
+            "reasoning": "Leadership role present, but distinguished reputation of the company not established.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p10-0002",
+                "page": 10,
+                "quote": "The person has performed in a leading or critical role for organizations or establishments that have a distinguished reputation."
+              }
+            ],
+            "next_steps": [
+              "Provide company ranking and industry recognition."
+            ]
+          },
+          {
+            "criterion_id": "C9",
+            "criterion": "High salary or other significantly high remuneration relative to others in the field",
+            "rating": "Insufficient Info",
+            "evidence": [
+              "compensation was $800,000"
+            ],
+            "reasoning": "Salary figure provided, but comparative data to peers is missing.",
+            "citations": [
+              {
+                "source": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf",
+                "chunk_id": "USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A)-p11-0001",
+                "page": 11,
+                "quote": "The person has commanded a high salary or other significantly high remuneration for services, in relation to others in the field."
+              }
+            ],
+            "next_steps": [
+              "Obtain industry salary benchmarks."
+            ]
+          },
+          {
+            "criterion_id": "C10",
+            "criterion": "Commercial successes in the performing arts, shown by box office receipts or sales",
+            "rating": "Missing",
+            "evidence": [],
+            "reasoning": "No performing arts record.",
+            "citations": [],
+            "next_steps": [
+              "Not applicable."
+            ]
+          }
+        ],
+        "overall": {
+          "strongest_criteria": [
+            "C1",
+            "C4",
+            "C5"
+          ],
+          "main_gaps": [
+            "C2",
+            "C6",
+            "C7",
+            "C8",
+            "C9"
+          ],
+          "readiness_score": 35,
+          "summary": "Candidate shows some evidence of awards, judging, and business contributions, but lacks key association membership, scholarly work, artistic display, and comparative salary data."
+        },
+        "limitations": [
+          "Educational screening only; not legal advice or a prediction of USCIS adjudication.",
+          "A r\u00e9sum\u00e9 may omit evidence needed for a complete petition.",
+          "Dropped r\u00e9sum\u00e9 evidence not found in the uploaded text for C3."
+        ],
+        "run_metadata": {
+          "provider": "groq",
+          "model": "openai/gpt-oss-20b",
+          "prompt_strategy": "balanced",
+          "retrieval_mode": "hybrid",
+          "elapsed_seconds": 60.867,
+          "input_tokens": 3053,
+          "output_tokens": 1310,
+          "estimated_cost_usd": null,
+          "guardrail_warnings": 1,
+          "generation_requests": 1
+        }
+      }
+    }
+  ]
+}

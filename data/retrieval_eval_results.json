@@ -1,0 +1,29 @@
+{
+  "method": "Criterion metadata is used as weak relevance labels; compare legacy set-overlap baseline to current BM25 + optional HNSW vector + reranking pipeline.",
+  "vector_chunks_available": 47,
+  "queries_scored": 10,
+  "k": 5,
+  "summary": {
+    "recall_at_5": {
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0
+    },
+    "reciprocal_rank": {
+      "before": 0.5167,
+      "after": 1.0,
+      "delta": 0.4833
+    },
+    "ndcg_at_5": {
+      "before": 0.6393,
+      "after": 1.0,
+      "delta": 0.3607
+    }
+  },
+  "limitations": [
+    "Criterion tags come from detected section headings, so these are weak labels, not human relevance judgments.",
+    "Queries include criterion IDs and the reranker uses criterion metadata; the measured gains are optimistic by construction.",
+    "Gemini vectors were used with exact cosine search; HNSW was unavailable in this Windows environment."
+  ],
+  "vector_index": "exact cosine"
+}

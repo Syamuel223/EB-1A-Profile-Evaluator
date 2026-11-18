@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eb1a-profile-evaluator"
+version = "0.1.0"
+description = "A cited, retrieval-grounded EB-1A profile screening prototype"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.6", "python-dotenv>=1.0", "requests>=2.31", "beautifulsoup4>=4.12", "pypdf>=4.0", "openai>=1.30", "google-genai>=1.0", "groq>=0.15", "fastapi>=0.110", "uvicorn[standard]>=0.27", "python-multipart>=0.0.9", "streamlit>=1.40", "chromadb>=0.5.3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+rerank = ["sentence-transformers>=3.0"]
+retrieval = ["hnswlib>=0.8.0"]
+
+[project.scripts]
+eb1a = "eb1a_evaluator.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["eb1a_evaluator*"]

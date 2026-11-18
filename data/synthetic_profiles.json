@@ -1,0 +1,27 @@
+[
+  {
+    "id": "researcher_strong",
+    "profile": "Dr. Mira Sen is a computational biology researcher. She received the 2022 National Bioinformatics Prize, awarded to one researcher annually after review by an expert committee. She is a Fellow of the International Society for Computational Biology, elected based on documented research contributions by a panel of senior fellows. Nature Biotechnology published a feature profile about her work. She reviewed 18 manuscripts for three peer-reviewed journals. Her open-source variant-calling method has been adopted by 40 hospitals and cited in national clinical guidance. She authored 26 peer-reviewed scholarly articles. Her work has not been displayed at artistic exhibitions. She leads a distinguished university genomics center with 25 staff. Her salary is $190,000; the resume provides no comparison data. She has no performing arts sales.",
+    "expected": {"C1":"Strong","C2":"Strong","C3":"Strong","C4":"Strong","C5":"Strong","C6":"Strong","C7":"Missing","C8":"Strong","C9":"Insufficient Info","C10":"Missing"}
+  },
+  {
+    "id": "engineer_partial",
+    "profile": "Arun Rao is a machine learning engineer at a well-known technology company. He received an internal employee award. He belongs to a professional computing association that accepts applicants who pay dues and meet education requirements. A trade blog mentioned a product he helped build, without naming him. He has been invited to review conference papers but has not completed reviews. He built an internal forecasting tool; adoption and impact data are not provided. He co-authored two workshop papers. He has no artistic exhibition record. He is a senior engineer on a product team, but leadership and critical impact are not described. His pay is $240,000 with no benchmarks. He has no performing arts record.",
+    "expected": {"C1":"Partial","C2":"Missing","C3":"Missing","C4":"Missing","C5":"Insufficient Info","C6":"Partial","C7":"Missing","C8":"Insufficient Info","C9":"Insufficient Info","C10":"Missing"}
+  },
+  {
+    "id": "performing_artist",
+    "profile": "Leah Brooks is a classical pianist. She won a regional music competition judged by a panel of established musicians. She is a member of a national performers guild; the resume does not describe its admission requirements. A major newspaper published a feature about her performances and career. She served on the jury of a national piano competition. Her new interpretation has been praised by reviewers, but broader influence is not documented. She authored one scholarly article on performance practice. Her performances were presented at two named artistic festivals. She served as artistic director of a nationally recognized orchestra for four seasons and led its programming. Her salary is not listed. Her album sold 80,000 copies and box office records show sold-out performances; comparative industry data is not included.",
+    "expected": {"C1":"Partial","C2":"Insufficient Info","C3":"Strong","C4":"Strong","C5":"Insufficient Info","C6":"Partial","C7":"Strong","C8":"Strong","C9":"Missing","C10":"Partial"}
+  },
+  {
+    "id": "early_career_sparse",
+    "profile": "Nina Patel is an early-career materials scientist. She has a master's degree and works as a research assistant. Her resume lists no awards, selective memberships, media coverage, judging, original contributions, publications, exhibitions, leadership roles, salary comparisons, or performing arts commercial activity.",
+    "expected": {"C1":"Missing","C2":"Missing","C3":"Missing","C4":"Missing","C5":"Missing","C6":"Missing","C7":"Missing","C8":"Missing","C9":"Missing","C10":"Missing"}
+  },
+  {
+    "id": "business_leader",
+    "profile": "Mateo Alvarez is a founder in renewable energy. He was named Entrepreneur of the Year by a regional chamber; selection details and award scope are not supplied. He is a member of a founders association open to all company owners. A national business magazine profiled him and his company. He judged a startup accelerator's final pitch competition. He developed a grid-storage control system licensed by three utilities, but field-wide significance is not established. He has written two industry articles, not scholarly papers. The system was shown at a technology expo, not an artistic exhibition. He was CEO of a publicly traded energy company and reports leading its successful turnaround. His compensation was $800,000; there is no comparative data. He has no performing arts record.",
+    "expected": {"C1":"Insufficient Info","C2":"Missing","C3":"Strong","C4":"Strong","C5":"Partial","C6":"Missing","C7":"Missing","C8":"Strong","C9":"Insufficient Info","C10":"Missing"}
+  }
+]

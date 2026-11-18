@@ -1,0 +1,464 @@
+{
+  "judge_model": "openai/gpt-oss-20b",
+  "judge_provider": "groq",
+  "llm_judge_manual_label_accuracy": 0.78,
+  "system_manual_label_accuracy": 0.78,
+  "judge_vs_system_delta": 0.0,
+  "profiles": [
+    {
+      "profile_id": "researcher_strong",
+      "manual_label_alignment": {
+        "judge_correct": 10,
+        "system_correct": 10,
+        "count": 10
+      },
+      "judgments": [
+        {
+          "criterion_id": "C1",
+          "judged_rating": "Strong",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "The r\u00e9sum\u00e9 explicitly states receipt of the 2022 National Bioinformatics Prize, a recognized national award, satisfying the criterion."
+        },
+        {
+          "criterion_id": "C2",
+          "judged_rating": "Strong",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Fellowship of the International Society for Computational Biology is a membership requiring outstanding achievement judged by senior fellows, meeting the criterion."
+        },
+        {
+          "criterion_id": "C3",
+          "judged_rating": "Strong",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Nature Biotechnology feature profile is a major trade publication directly about her work, fulfilling the requirement."
+        },
+        {
+          "criterion_id": "C4",
+          "judged_rating": "Strong",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Reviewing 18 manuscripts for three peer\u2011reviewed journals demonstrates participation as a judge of others' work."
+        },
+        {
+          "criterion_id": "C5",
+          "judged_rating": "Strong",
+          "support_score": 3,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Adoption of her open\u2011source variant\u2011calling method by 40 hospitals indicates major significance, though explicit citation of impact metrics would strengthen the claim."
+        },
+        {
+          "criterion_id": "C6",
+          "judged_rating": "Strong",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Authorship of 26 peer\u2011reviewed scholarly articles satisfies the criterion."
+        },
+        {
+          "criterion_id": "C7",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "No evidence of artistic exhibition display is provided in the r\u00e9sum\u00e9."
+        },
+        {
+          "criterion_id": "C8",
+          "judged_rating": "Strong",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Leading a distinguished university genomics center with 25 staff meets the leading or critical role criterion."
+        },
+        {
+          "criterion_id": "C9",
+          "judged_rating": "Insufficient Info",
+          "support_score": 1,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Salary of $190,000 is stated, but without comparative data it cannot be determined if it is high relative to peers."
+        },
+        {
+          "criterion_id": "C10",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "No performing arts activity or sales data is present in the r\u00e9sum\u00e9."
+        }
+      ]
+    },
+    {
+      "profile_id": "engineer_partial",
+      "manual_label_alignment": {
+        "judge_correct": 5,
+        "system_correct": 5,
+        "count": 10
+      },
+      "judgments": [
+        {
+          "criterion_id": "C1",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Award is internal; not proven nationally/internationally recognized."
+        },
+        {
+          "criterion_id": "C2",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Membership exists but outstanding achievement requirement not demonstrated."
+        },
+        {
+          "criterion_id": "C3",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "No published material about the individual is provided."
+        },
+        {
+          "criterion_id": "C4",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "Invitations to review were not completed; no judging activity."
+        },
+        {
+          "criterion_id": "C5",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Contribution exists but significance and impact data are missing."
+        },
+        {
+          "criterion_id": "C6",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "Only workshop papers mentioned; no peer\u2011reviewed scholarly articles."
+        },
+        {
+          "criterion_id": "C7",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "No artistic exhibition record."
+        },
+        {
+          "criterion_id": "C8",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Senior engineer role noted but no evidence of distinguished organization or critical impact."
+        },
+        {
+          "criterion_id": "C9",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "Salary provided but no comparative benchmarks."
+        },
+        {
+          "criterion_id": "C10",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "No performing arts activity."
+        }
+      ]
+    },
+    {
+      "profile_id": "performing_artist",
+      "manual_label_alignment": {
+        "judge_correct": 8,
+        "system_correct": 8,
+        "count": 10
+      },
+      "judgments": [
+        {
+          "criterion_id": "C1",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Resume mentions a regional competition but does not confirm national/international prestige required for lesser prizes."
+        },
+        {
+          "criterion_id": "C2",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "No evidence of membership requirements or expert judgment for the guild."
+        },
+        {
+          "criterion_id": "C3",
+          "judged_rating": "Strong",
+          "support_score": 3,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Feature in a major newspaper satisfies coverage requirement."
+        },
+        {
+          "criterion_id": "C4",
+          "judged_rating": "Strong",
+          "support_score": 3,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Jury service at a national competition meets judging criterion."
+        },
+        {
+          "criterion_id": "C5",
+          "judged_rating": "Partial",
+          "support_score": 1,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "Praise noted but no evidence of major significance or impact."
+        },
+        {
+          "criterion_id": "C6",
+          "judged_rating": "Partial",
+          "support_score": 1,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "Single scholarly article present but venue and peer\u2011review status unclear."
+        },
+        {
+          "criterion_id": "C7",
+          "judged_rating": "Strong",
+          "support_score": 3,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Performances at named festivals qualify as artistic exhibitions."
+        },
+        {
+          "criterion_id": "C8",
+          "judged_rating": "Strong",
+          "support_score": 3,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Artistic director role in a nationally recognized orchestra meets leading role criterion."
+        },
+        {
+          "criterion_id": "C9",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "No salary or remuneration data provided."
+        },
+        {
+          "criterion_id": "C10",
+          "judged_rating": "Partial",
+          "support_score": 1,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "Sales figures present but lack comparative industry context."
+        }
+      ]
+    },
+    {
+      "profile_id": "early_career_sparse",
+      "manual_label_alignment": {
+        "judge_correct": 10,
+        "system_correct": 10,
+        "count": 10
+      },
+      "judgments": [
+        {
+          "criterion_id": "C1",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "No award information present in the r\u00e9sum\u00e9."
+        },
+        {
+          "criterion_id": "C2",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "No professional memberships listed."
+        },
+        {
+          "criterion_id": "C3",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "No media coverage or publications cited."
+        },
+        {
+          "criterion_id": "C4",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "No judging or peer\u2011review activity mentioned."
+        },
+        {
+          "criterion_id": "C5",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "No major contributions or innovations listed."
+        },
+        {
+          "criterion_id": "C6",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "No scholarly articles listed."
+        },
+        {
+          "criterion_id": "C7",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "No exhibitions or showcases mentioned."
+        },
+        {
+          "criterion_id": "C8",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "Only a research assistant role, no leadership position."
+        },
+        {
+          "criterion_id": "C9",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "No salary information provided."
+        },
+        {
+          "criterion_id": "C10",
+          "judged_rating": "Missing",
+          "support_score": 4,
+          "evidence_grounded": true,
+          "citations_supported": false,
+          "issue": "Candidate is a materials scientist; no performing arts activity listed."
+        }
+      ]
+    },
+    {
+      "profile_id": "business_leader",
+      "manual_label_alignment": {
+        "judge_correct": 6,
+        "system_correct": 6,
+        "count": 10
+      },
+      "judgments": [
+        {
+          "criterion_id": "C1",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Award mentioned but scope and selection details missing"
+        },
+        {
+          "criterion_id": "C2",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "Membership in open association does not satisfy requirement"
+        },
+        {
+          "criterion_id": "C3",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": false,
+          "citations_supported": true,
+          "issue": "Profile exists but publication details not provided"
+        },
+        {
+          "criterion_id": "C4",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Judge role noted but invitation/participation details missing"
+        },
+        {
+          "criterion_id": "C5",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Contribution exists but field-wide significance not documented"
+        },
+        {
+          "criterion_id": "C6",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "Only industry articles, no scholarly peer\u2011reviewed papers"
+        },
+        {
+          "criterion_id": "C7",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "Showcased at tech expo, not artistic exhibition"
+        },
+        {
+          "criterion_id": "C8",
+          "judged_rating": "Partial",
+          "support_score": 2,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Leadership role present but company\u2019s distinguished reputation not established"
+        },
+        {
+          "criterion_id": "C9",
+          "judged_rating": "Insufficient Info",
+          "support_score": 1,
+          "evidence_grounded": true,
+          "citations_supported": true,
+          "issue": "Salary provided but no comparative data"
+        },
+        {
+          "criterion_id": "C10",
+          "judged_rating": "Missing",
+          "support_score": 0,
+          "evidence_grounded": false,
+          "citations_supported": false,
+          "issue": "No performing arts record"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The judge is another model and may share systematic biases with the evaluator.",
+    "Manual labels are simplified educational labels, not attorney or USCIS decisions.",
+    "Review score explanations and disagreements manually; do not use the judge as ground truth."
+  ]
+}

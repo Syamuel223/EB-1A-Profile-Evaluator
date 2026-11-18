@@ -1,0 +1,17 @@
+.env
+.streamlit/secrets.toml
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/knowledge_base/cache/
+data/knowledge_base/downloads/
+data/knowledge_base/hnsw.index
+data/knowledge_base/hnsw.meta.json
+data/knowledge_base/bm25.index.json
+data/knowledge_base/chroma_db/
+data/chunks.json
+data/bm25.index.json
+data/opportunities_results.json
+data/starter_guidance.md
+data/USCIS Policy Manual, Volume 6, Part F, Chapter 2 Extraordinary Ability (EB-1A).pdf
