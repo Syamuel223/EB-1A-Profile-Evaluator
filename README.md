@@ -67,6 +67,16 @@ python -m eb1a_evaluator.cli opportunities data\assessment.json --field "computa
 
 ## Evaluation scripts
 
+### Local checks
+
+Run the unit checks without model API calls:
+
+```powershell
+python -m unittest discover -s tests -v
+python -m compileall -q eb1a_evaluator scripts streamlit_app.py
+python -m pip check
+```
+
 ### Retrieval before/after
 
 Run without model credentials:
