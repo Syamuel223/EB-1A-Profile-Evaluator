@@ -2,12 +2,10 @@ import tempfile
 import subprocess
 import sys
 import unittest
-from pathlib import Path
 
 from eb1a_evaluator.guardrails import ProfileInputError, inspect_profile, validate_output
 from eb1a_evaluator.knowledge import Chunk, split_hybrid_chunks
 from eb1a_evaluator.retrieval import BM25Index
-from streamlit.testing.v1 import AppTest
 
 
 class InputGuardrailTests(unittest.TestCase):
@@ -78,21 +76,6 @@ ranked = retrieval._vector_search([0.95, 0.05, 0.0], chunks, 2)
 assert chunks[ranked[0][0]].chunk_id == 'x'
 """
             subprocess.run([sys.executable, "-c", code, temp_dir], check=True)
-
-
-class StreamlitTests(unittest.TestCase):
-    def test_completed_assessment_shows_opportunity_search_controls(self):
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "streamlit_app.py"))
-        app.session_state["eb1a_last_assessment"] = {
-            "overall": {"readiness_score": 25, "summary": "Test summary", "strongest_criteria": [], "main_gaps": ["C1"]},
-            "criteria": [],
-            "limitations": [],
-            "run_metadata": {},
-        }
-        app.run()
-        self.assertEqual(len(app.exception), 0)
-        self.assertIn("Field of expertise", [widget.label for widget in app.text_input])
-        self.assertIn("Find opportunities", [widget.label for widget in app.button])
 
 
 if __name__ == "__main__":

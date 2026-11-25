@@ -16,7 +16,6 @@ if str(ROOT) not in sys.path:
 
 from eb1a_evaluator.config import LLM_PROVIDER, provider_model
 from eb1a_evaluator.guardrails import ProfileInputError
-from eb1a_evaluator.opportunities import suggest_opportunities
 from eb1a_evaluator.pipeline import assess_profile
 
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024
@@ -104,7 +103,6 @@ if st.button("Assess profile", type="primary", disabled=uploaded is None, use_co
             result = assess_profile(profile_text).model_dump(mode="json")
         st.session_state["eb1a_last_assessment"] = result
         st.session_state["eb1a_last_filename"] = uploaded.name
-        st.session_state.pop("eb1a_opportunities", None)
         st.success("Assessment complete.")
     except ProfileInputError as exc:
         st.error(str(exc))
@@ -138,51 +136,6 @@ if assessment:
     with right:
         st.markdown("#### Main gaps")
         st.write(", ".join(gaps) if gaps else "None identified")
-
-    st.header("Opportunity research (optional)")
-    st.caption(
-        "Search for possible awards, selective memberships, or judging opportunities related to weaker criteria. "
-        "This sends the field and criterion names to the search service, not the uploaded profile. "
-        "Leads are unverified and do not count as achieved evidence."
-    )
-    field = st.text_input(
-        "Field of expertise",
-        placeholder="For example: software engineering",
-        key="eb1a_opportunity_field",
-    )
-    if st.button("Find opportunities", disabled=not field.strip()):
-        try:
-            with st.spinner("Searching for current opportunity leads…"):
-                opportunities = suggest_opportunities(assessment, field.strip())
-            st.session_state["eb1a_opportunities"] = {
-                "field": field.strip(),
-                "result": opportunities,
-            }
-        except Exception as exc:
-            st.error(f"Opportunity search failed ({type(exc).__name__}). Check the Groq and Tavily keys, then retry.")
-
-    saved_opportunities = st.session_state.get("eb1a_opportunities")
-    if saved_opportunities and saved_opportunities.get("field") == field.strip():
-        opportunity_result = saved_opportunities.get("result", {})
-        leads = opportunity_result.get("opportunities", [])
-        if leads:
-            for lead in leads:
-                criterion_id = lead.get("criterion_id", "")
-                st.markdown(f"**{lead.get('title', 'Opportunity')}** · {criterion_id}")
-                st.write(lead.get("why_relevant", ""))
-                if lead.get("deadline_or_status"):
-                    st.caption(lead["deadline_or_status"])
-                st.write(f"**Possible next step:** {lead.get('next_step', 'Verify details on the source page.')}")
-                if lead.get("source_url", "").startswith(("https://", "http://")):
-                    st.link_button("Open source", lead["source_url"])
-        else:
-            st.info(
-                opportunity_result.get("caveats")
-                or opportunity_result.get("note")
-                or "No verified leads were returned. Try again later or use a more specific field."
-            )
-        if opportunity_result.get("note") and leads:
-            st.caption(opportunity_result["note"])
 
     st.header("Criterion-by-criterion assessment")
     for item in criteria:
