@@ -51,7 +51,7 @@ python -m eb1a_evaluator.cli evaluate path\to\resume.txt
 uvicorn eb1a_evaluator.api:app --reload
 ```
 
-The Streamlit app at `http://localhost:8501` lets users upload PDF/TXT/Markdown profiles, view the overall and criterion-level assessment, and download JSON. The FastAPI API provides `POST /evaluate` for profile uploads and `POST /opportunities` for an assessment plus a non-identifying field description. The opportunity agent chooses up to two searches and returns leads only when their URLs match Tavily results; explicit dates must also appear in linked result text. Criterion/date filters can leave the result empty. It does not apply, contact anyone, or treat a lead as achieved evidence. The CLI also supports:
+The Streamlit app at `http://localhost:8501` lets users upload PDF/TXT/Markdown profiles, view the overall and criterion-level assessment, and download JSON. After an assessment, its optional opportunity-research section accepts a field of expertise and displays any leads that pass the agent's source and date checks. It sends the field and weak criterion names to search, not the uploaded profile. The FastAPI API provides `POST /evaluate` for profile uploads and `POST /opportunities` for an assessment plus a non-identifying field description. The opportunity agent chooses up to two searches and returns leads only when their URLs match Tavily results; explicit dates must also appear in linked result text. Criterion/date filters can leave the result empty. It does not apply, contact anyone, or treat a lead as achieved evidence. The CLI also supports:
 
 ```powershell
 python -m eb1a_evaluator.cli opportunities data\assessment.json --field "computational biology"
